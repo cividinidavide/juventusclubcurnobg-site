@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<LINK REL="SHORTCUT ICON" HREF="images/favicon.png">
+		<title>Juventus Official Fan Club Curno</title>
+		<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+		<!-- web-font -->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,300,700,800,400,600' rel='stylesheet' type='text/css'>
+		<!-- web-font -->
+		<!-- js -->
+		<script src="js/jquery.min.js"></script>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		<!-- js -->
+		<!-- start-smoth-scrolling -->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+		<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDY0kkJiTPVd2U7aTOAwhc9ySH6oHxOIYM&sensor=false"></script>
+		<script>
+			function initialize()
+			{
+				var mapProp = {
+				center:new google.maps.LatLng(45.67379, 9.59210),
+				zoom:15,
+				mapTypeId:google.maps.MapTypeId.ROADMAP
+			};
+			var map=new google.maps.Map(document.getElementById("googleMap")
+			,mapProp);
+
+			var marker=new google.maps.Marker({
+				position:new google.maps.LatLng(45.67379, 9.59210),
+				animation:google.maps.Animation.BOUNCE
+			});
+
+			marker.setMap(map);
+			}
+
+			google.maps.event.addDomListener(window, 'load', initialize);
+		</script>
+		<script type="text/javascript">
+		function div1() {
+			document.getElementById("div1").style.display="block";
+			document.getElementById("div2").style.display="none";
+			document.getElementById("div3").style.display="none";
+			document.getElementById("button1").className="filter active wow bounceIn";
+			document.getElementById("button2").className="filter wow bounceIn";
+			document.getElementById("button3").className="filter wow bounceIn";
+		}
+		function div2() {
+			document.getElementById("div1").style.display="none";
+			document.getElementById("div2").style.display="block";
+			document.getElementById("div3").style.display="none";
+			document.getElementById("button1").className="filter wow bounceIn";
+			document.getElementById("button2").className="filter active wow bounceIn";
+			document.getElementById("button3").className="filter wow bounceIn";
+		}
+		function div3() {
+			document.getElementById("div1").style.display="none";
+			document.getElementById("div2").style.display="none";
+			document.getElementById("div3").style.display="block";
+			document.getElementById("button1").className="filter wow bounceIn";
+			document.getElementById("button2").className="filter wow bounceIn";
+			document.getElementById("button3").className="filter active wow bounceIn";
+		}
+		</script>
+<!-- start-smoth-scrolling -->
+<!-- animated-css -->
+		<link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
+		<script src="js/wow.min.js"></script>
+		<script>
+		new WOW().init();
+		</script>
+<!-- animated-css -->
+	</head>
+	<body>
+		<!-- header -->
+		<div id="home" class="heder" style="height: 100px">
+			<!-- container -->
+			<div class="container">
+				<img src="images/coccarda.png" style="height: 100px; width: 200px; float: left" />
+				<img src="images/logo2.png" style="height: 100px; width: 170px; float: right" />
+				<img src="images/cinquantesimo.png" style="height: 80px; float: right; margin-top: 10px" />
+				<div class="header-top">
+					<div class="heder-logo" align="center">
+						<h1><a href="#">Juventus Official Fan Club Curno</a></h1>
+
+					</div>
+
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+			<!-- container -->
+		</div>
+
+		<!-- Menù -->
+		<div style="width: 100%; background-color: white; height: 3.15em; font-weight: 400;">
+			<ul style="list-style: none; margin:0; padding:0; text-align: center; padding: 0.6em 0; font-size: 17px;">
+
+				<li style="display:inline; margin-right:0.5em; list-style:none; margin:0; padding:0; transition-duration: .5s; transition-property: background-color;" onmouseover="this.style.background='rgba(0, 0, 0, 0.15)';" onmouseout="this.style.background='white';">
+				<a href="index.html" style="padding:0.5em 1em; color: black; text-decoration: none; ">Home</a>
+				</li>
+
+				<li style="display:inline; margin-right:0.5em; list-style:none; margin:0; padding:0; transition-duration: .5s; transition-property: background-color;" onmouseover="this.style.background='rgba(0, 0, 0, 0.15)';" onmouseout="this.style.background='white';">
+				<a href="chisiamo.html" style="padding:0.5em 1em; color: black; text-decoration: none">Chi siamo</a>
+				</li>
+
+				<li style="display:inline; margin-right:0.5em; list-style:none; margin:0; padding:0; transition-duration: .5s; transition-property: background-color" onmouseover="this.style.background='rgba(0, 0, 0, 0.15)';" onmouseout="this.style.background='white';">
+				<a href="tesseramento.html" style="padding:0.5em 1em; color: black; text-decoration: none">Tesseramento</a>
+				</li>
+
+				<li style="display:inline; margin-right:0.5em; list-style:none; margin:0; padding:0; transition-duration: .5s; transition-property: background-color;" onmouseover="this.style.background='rgba(0, 0, 0, 0.15)';" onmouseout="this.style.background='white';">
+				<a href="biglietti.html" style="padding:0.5em 1em; color: black; text-decoration: none">Richiesta biglietti</a>
+				</li>
+
+				<li style="display:inline; margin-right:0.5em; list-style:none; margin:0; padding:0; transition-duration: .5s; transition-property: background-color;" onmouseover="this.style.background='rgba(0, 0, 0, 0.15)';" onmouseout="this.style.background='white';">
+				<a href="risultati.html" style="padding:0.5em 1em; color: black; text-decoration: none">Risultati</a>
+				</li>
+
+				<li style="display:inline; margin-right:0.5em; list-style:none; margin:0; padding:0; transition-duration: .5s; transition-property: background-color; margin-right:0;" onmouseover="this.style.background='rgba(0, 0, 0, 0.15)';" onmouseout="this.style.background='white';">
+				<a href="noi.html" style="padding:0.5em 1em; color: black; text-decoration: none"><b>NOI</b></a>
+				</li>
+
+				<li style="display:inline; margin-right:0.5em; list-style:none; margin:0; padding:0; transition-duration: .5s; transition-property: background-color; margin-right:0;" onmouseover="this.style.background='rgba(0, 0, 0, 0.15)';" onmouseout="this.style.background='white';">
+				<a href="contatti.html" style="padding:0.5em 1em; color: black; text-decoration: none"><b>CONTATTI</b></a>
+				</li>
+
+			</ul>
+		</div>
+
+
+		<!-- header -->
+		<!-- banner -->
+		<a href="http://www.juventus.com/juve/it/home"><div class="banner">
+		</div></a>
+		<!-- banner -->
+
+		<!-- works -->
+		<div id="portfolio" class="works">
+			<!-- container -->
+			<div class="container">
+				<div class="works-hedding wow bounceIn" data-wow-delay="0.4s">
+					<h3>Notizie.</h3>
+				</div>
+
+
+
+				<ul id="filters">
+					<li><input id="button1" type="submit" class="filter active wow bounceIn" data-wow-delay="0.4s" data-filter="app card icon logo web" value="News" onclick="div1()" /></li>
+					<li><input id="button2" type="submit" class="filter wow bounceIn" data-wow-delay="0.4s" data-filter="app" value="Ultima Partita" onclick="div2()" /></li>
+					<li><input id="button3" type="submit" class="filter wow bounceIn" data-wow-delay="0.4s" data-filter="card" value="Prossime partite" onclick="div3()" /></li>
+				</ul>
+
+
+					<div id="div1" class="portfolio card mix_all" data-cat="card" style="display: block">
+						<div>
+							La prossima partita (Champions League) del 10/04 alle ore 21:00 vedra' di fronte:<br>
+							<h4><b>Ajax - Juventus</b></h4>
+						</div>
+					</div>
+
+					<div id="div2" class="portfolio card mix_all" data-cat="card" style="display: none">
+						<div>
+							<p>
+								La partita precedente (Campionato) ha visto di fronte:<br>
+								<h4><b>Juventus - Milan</b></h4><br>
+								Conclusa col risultato di: <h4>2 - 1</h4><br>
+								<b>Marcatori:</b> Piatek (M), Dybala (J), Kean (J)
+							</p><br>
+							<!-- <p>
+								La partita precedente (Supercoppa Italia) ha visto di fronte:<br>
+								<h4><b>Juventus - Milan</b></h4><br>
+								Conclusa col risultato di: <h4>1 - 0</h4><br>
+								<b>Marcatori:</b> Cristiano Ronaldo (J)
+							</p> -->
+		                </div>
+					</div>
+
+
+					<div id="div3" class="portfolio card mix_all" data-cat="card" style="display: none">
+						<div>
+							La partita (Campionato) del 13/04 alle ore 18:00 vedra' di fronte:<br>
+							<h4><b>Spal - Juventus</b></h4>
+						</div>
+						<div>
+							La partita (Champions League) del 16/04 alle ore 21:00 vedra' di fronte:<br>
+							<h4><b>Juventus - Ajax</b></h4>
+						</div>
+					</div>
+
+				<div class="clearfix"></div>
+			</div>
+
+			<!-- container -->
+		</div>
+
+		<!-- services -->
+		<div id="services" class="services">
+			<!-- container -->
+			<div class="container">
+				<div class="col-md-4 services-hedding wow bounceIn" data-wow-delay="0.4s">
+					<h3>I nostri servizi.</h3>
+				</div>
+				<div class="col-md-4 services-info wow bounceIn" data-wow-delay="0.4s">
+					<div class="col-md-3 img-grid">
+						<span> </span>
+					</div>
+					<div class="col-md-9 img-grid-text">
+						<h4>Aggiornato</h4>
+						<p>Grazie al nostro sito, sei sempre in contatto col mondo Juve.</p>
+					</div>
+				</div>
+				<div class="col-md-4 services-info wow bounceIn" data-wow-delay="0.4s">
+					<div class="col-md-3 img-grid">
+						<span class="wood"> </span>
+					</div>
+					<div class="col-md-9 img-grid-text">
+						<h4>Biglietti</h4>
+						<p>Se sei iscritto al club puoi richiedere i biglietti per lo stadio!</p>
+					</div>
+				</div>
+				<div class="col-md-4 services-info wow bounceIn" data-wow-delay="0.4s">
+					<div class="col-md-3 img-grid">
+						<span class="power"> </span>
+					</div>
+					<div class="col-md-9 img-grid-text">
+						<h4>Tessere</h4>
+						<p>Essendo iscritto al club puoi sottocrivere la tessera del tifoso.</p>
+					</div>
+				</div>
+				<div class="col-md-4 services-info wow bounceIn" data-wow-delay="0.4s">
+					<div class="col-md-3 img-grid">
+						<span class="wood"> </span>
+					</div>
+					<div class="col-md-9 img-grid-text">
+						<h4>Abbonamenti</h4>
+						<p>Se sei nostro socio, puoi anche prendere un abbonamento per vedere tutte le partite allo stadio.</p>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<!-- container -->
+		</div>
+		<!-- services -->
+
+
+		<!-- works -->
+		<!-- works-bottom -->
+		<div class="work-bottom">
+			<!-- container -->
+			<div class="container">
+			<!-- banner Slider starts Here -->
+	  			<script src="js/responsiveslides.min.js"></script>
+			 <script>
+			    // You can also use "$(window).load(function() {"
+			    $(function () {
+			      // Slideshow 4
+			      $("#slider4").responsiveSlides({
+			        auto: true,
+			        pager: true,
+			        nav: false,
+			        speed: 500,
+			        namespace: "callbacks",
+			        before: function () {
+			          $('.events').append("<li>before event fired.</li>");
+			        },
+			        after: function () {
+			          $('.events').append("<li>after event fired.</li>");
+			        }
+			      });
+
+			    });
+			  </script>
+<!--//End-slider-script-->
+
+
+
+				<div  id="top" class="callbacks_container">
+			      <ul class="rslides" id="slider4">
+			        <li>
+			          <div class="slider-top wow bounceIn" data-wow-delay="0.4s">
+			          	<p>"Il 10 della Juve non deve essere ritirato, tutti i bambini sognano di giocare con quella maglia."</p>
+			          	<img src="images/delpiero.jpg" alt="" />
+						<p class="title">Alessandro Del Piero</p>
+			          </div>
+			        </li>
+			        <li>
+			          <div class="slider-top wow bounceIn" data-wow-delay="0.4s">
+			          	<p>"L'emozione Juve e' sempre rivolta al domani, la gioia piu' bella che deve venire."</p>
+			          	<img src="images/agnelli.jpg" alt="" />
+						<p class="title">Andrea Agnelli</p>
+			          </div>
+			        </li>
+			        <li>
+			          <div class="slider-top wow bounceIn" data-wow-delay="0.4s">
+			          	<p>"Alla Juve vincere non e' importante: e' l'unica cosa che conta."</p>
+			          	<img src="images/boniperti.jpg" alt="" />
+						<p class="title">Giampiero Boniperti</p>
+			          </div>
+			        </li>
+			      </ul>
+			    </div>
+			    <div class="clearfix"> </div>
+	  			<!-- banner Slider Ends Here -->
+
+
+			</div>
+			<!-- container -->
+		</div>
+
+		<div class="team-bottom">
+			<!-- container -->
+			<div class="container">
+				<div align="center">
+				<img align="center" src="images/settescudetti.jpg" style="width:80%; height:500px" alt="" />
+				</div>
+				<div class="col-md-3 gift wow bounceIn" data-wow-delay="0.4s">
+					<img src="images/trophy_scudetto.png">
+					<p>36</p>
+					<p class="text">SCUDETTI</p>
+				</div>
+				<div class="col-md-3 gift wow bounceIn" data-wow-delay="0.4s">
+					<img src="images/trophy_coppa_italia.png">
+					<p>13</p>
+					<p class="text">COPPE ITALIA</p>
+				</div>
+				<div class="col-md-3 gift wow bounceIn" data-wow-delay="0.4s">
+					<img src="images/trophy_supercoppa_italiana.png">
+					<p>8</p>
+					<p class="text">SUPERCOPPE ITALIANE</p>
+				</div>
+				<div class="col-md-3 gift wow bounceIn" data-wow-delay="0.4s">
+					<img src="images/trophy_champions_league.png">
+					<p>2</p>
+					<p class="text">CHAMPIONS LEAGUE</p>
+				</div>
+				<div class="col-md-3 gift wow bounceIn" data-wow-delay="0.4s">
+					<img src="images/trophy_coppa_delle_coppe.png">
+					<p>1</p>
+					<p class="text">COPPA DELLE COPPE</p>
+				</div>
+				<div class="col-md-3 gift wow bounceIn" data-wow-delay="0.4s">
+					<img src="images/trophy_coppa_uefa.png">
+					<p>3</p>
+					<p class="text">EUROPA LEAGUE</p>
+				</div>
+				<div class="col-md-3 gift wow bounceIn" data-wow-delay="0.4s">
+					<img src="images/trophy_supercoppa_europea.png">
+					<p>2</p>
+					<p class="text">SUPERCOPPE EUROPEE</p>
+				</div>
+				<div class="col-md-3 gift wow bounceIn" data-wow-delay="0.4s">
+					<img src="images/trophy_coppa_intercontinentale.png">
+					<p>2</p>
+					<p class="text">COPPE INTERCONTINENTALI</p>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<!-- container -->
+		</div>
+		<!-- team-bottom -->
+
+		<!-- skills -->
+		<div id="about" class="skills">
+			<!-- container -->
+			<div class="container">
+				<div class="skills-hedding wow bounceIn" data-wow-delay="0.4s">
+					<h3>Tifosi Juventini.</h3>
+				</div>
+				<!--/-->
+					<div class="skills-grid-text">
+						<h5 class="plus wow fadeInRight">I bianconeri sono settimi in Europa con 38 milioni di tifosi</h5>
+						<p class="wow bounceIn" data-wow-delay="0.4s">La piu' amata dagli italiani. La Juventus si conferma regina
+							del tifo: gli ultimi dati raccolti raccontano di 11,2 mln di tifosi nella penisola (29% del totale).
+							Numeri sensazionali anche in Europa, dove i bianconeri raggiungono i 38 milioni di fan e sono
+							al settimo posto della classifica.
+						</p>
+						<p class="wow bounceIn" data-wow-delay="0.4s">La leadership viene confermata anche dagli ascolti televisivi:
+						79 milioni di telespettatori raggiunti dalle dirette. E allo Juventus Stadium la capacita' totale e' stata
+						coperta al 94%.
+						</p>
+					</div>
+				</div>
+
+
+						<script>
+							$(document).ready(function(){
+								$(".tab1 p").hide();
+								$(".tab2 p").hide();
+								$(".tab3 p").hide();
+								$(".tab4 p").hide();
+								$(".tab5 p").hide();
+								$(".tab1 ul").click(function(){
+									$(".tab1 p").slideToggle(300);
+									$(".tab2 p").hide();
+									$(".tab3 p").hide();
+									$(".tab4 p").hide();
+									$(".tab5 p").hide();
+								})
+								$(".tab2 ul").click(function(){
+									$(".tab2 p").slideToggle(300);
+									$(".tab1 p").hide();
+									$(".tab3 p").hide();
+									$(".tab4 p").hide();
+									$(".tab5 p").hide();
+								})
+								$(".tab3 ul").click(function(){
+									$(".tab3 p").slideToggle(300);
+									$(".tab4 p").hide();
+									$(".tab5 p").hide();
+									$(".tab2 p").hide();
+									$(".tab1 p").hide();
+								})
+								$(".tab4 ul").click(function(){
+									$(".tab4 p").slideToggle(300);
+									$(".tab3 p").hide();
+									$(".tab2 p").hide();
+									$(".tab1 p").hide();
+									$(".tab5 p").hide();
+								})
+								$(".tab5 ul").click(function(){
+									$(".tab5 p").slideToggle(300);
+									$(".tab4 p").hide();
+									$(".tab3 p").hide();
+									$(".tab2 p").hide();
+									$(".tab1 p").hide();
+
+								})
+
+							});
+						</script>
+						<!-- script -->
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<!-- container -->
+		</div>
+		<!-- skills -->
+
+
+
+		<!-- footer -->
+		<div class="footer">
+			<!-- container -->
+			<div class="container">
+				<h4>Juventus Club Curno BG</h4>
+				<div class="copyright">
+					<p>
+						Created by Davide Cividini - davide.civid.96@gmail.com
+					</p>
+					<div class="social-icons wow bounceIn" data-wow-delay="0.4s">
+						<ul>
+							<a href="https://twitter.com/juventusclubcur"><li class="twit"></li></a>
+							<a href="https://www.facebook.com/juventusclubdoccurnobg.curno?fref=ts"><li class="fb"></li></a>
+						</ul>
+					</div>
+				</div>
+				<a class="scroll" href="#home"><img src="images/up-arrow.png" alt="" /></a>
+			</div>
+
+			<!-- container -->
+		</div>
+		<!-- footer -->
+	</body>
+</html>
